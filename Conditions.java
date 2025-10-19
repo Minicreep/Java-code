@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Conditions {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter the number:");
+		int num=sc.nextInt();
+		
+		if(num>0)
+			System.out.println("the number is positive");
+		else if(num<0)
+			System.out.println("the number is negative");
+		else
+			System.out.println("the number is Zero");
+		
+		
+		System.out.println("Enter the number(even/odd):");
+		int n=sc.nextInt();
+		
+		if(n != 0)
+			if(n%2==0)
+				System.out.println("the number is even");
+			else
+				System.out.println("the number is odd");
+		
+		sc.close();
+		
+	}
+
+}
